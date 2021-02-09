@@ -2,7 +2,7 @@ import { loadDiagnostic } from './diagnostics';
 import { createResultsId, getRenderOptions, usePlugin } from './util';
 import { Diagnostic, Plugin, PluginCtx, PluginTransformResults } from '@stencil/core/internal';
 import { PluginOptions } from './declarations';
-import { render } from 'node-sass';
+import { render } from 'sass';
 
 export function sass(opts: PluginOptions = {}): Plugin {
 

@@ -1,8 +1,8 @@
-import { SassError } from 'node-sass';
+import { SassException } from 'sass';
 import { Diagnostic, PluginCtx, PrintLine } from '@stencil/core/internal';
 
 
-export function loadDiagnostic(context: PluginCtx, sassError: SassError, filePath: string) {
+export function loadDiagnostic(context: PluginCtx, sassError: SassException, filePath: string) {
   if (sassError == null || context == null) {
     return null;
   }

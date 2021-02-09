@@ -1,19 +1,19 @@
-# stencil-node-sass
+# stencil-sass
 
 
-This package is used to easily precompile Sass files within Stencil components. Internally this plugin uses [node-sass](https://www.npmjs.com/package/node-sass).
+This package is used to easily precompile Sass files within Stencil components. Internally this plugin uses [sass](https://www.npmjs.com/package/sass).
 
 This package is a fork of [@stencil/sass](https://github.com/ionic-team/stencil-sass) to work around problems with the bundled [sass](https://www.npmjs.com/package/sass) implementation
 
 First, npm install within the project:
 
 ```
-npm install stencil-node-sass node-sass --save-dev
+npm install stencil-sass sass --save-dev
 ```
 
 Or with yarn:
 ```
-yarn add stencil-node-sass node-sass --dev
+yarn add stencil-sass sass --dev
 ```
 
 Next, within the project's stencil config, import the plugin and add it to the config's `plugins` property:
@@ -21,7 +21,7 @@ Next, within the project's stencil config, import the plugin and add it to the c
 #### stencil.config.ts
 ```ts
 import { Config } from '@stencil/core';
-import { sass } from 'stencil-node-sass';
+import { sass } from 'stencil-sass';
 
 export const config: Config = {
   plugins: [
@@ -60,7 +60,7 @@ Note that each of these files are always added to each component, so in most cas
 
 ## Related
 
-* [node-sass](https://www.npmjs.com/package/node-sass)
+* [sass](https://www.npmjs.com/package/sass)
 * [Stencil](https://stenciljs.com/)
 * [@stencil/sass](https://www.npmjs.com/package/@stencil/sass)
 * [Stencil Worldwide Slack](https://stencil-worldwide.slack.com)
@@ -69,5 +69,5 @@ Note that each of these files are always added to each component, so in most cas
 
 ## Credits
 
-The heavy lifting was done by the [ionic-team](https://github.com/ionic-team) i just changed the imports to node-sass.
+The heavy lifting was done by the [ionic-team](https://github.com/ionic-team) i just changed the imports to sass.
 So all credits belongs to the ionic-team.
