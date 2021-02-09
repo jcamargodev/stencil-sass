@@ -59,5 +59,11 @@
         "tsConfig": "tsConfig.test.json"
       }
     }
+  },
+  "bugs": {
+    "url": "https://github.com/jcamargodev/stencil-sass/issues"
+  },
+  "directories": {
+    "test": "test"
   }
 }
